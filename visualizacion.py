@@ -140,11 +140,11 @@ agrup1['Dia'] = agrup1.index
 
 grafico2 = alt.Chart(agrup1).mark_bar(size = 20).encode(
     x = alt.X('Dia', axis=alt.Axis(title='Fecha')),
-    y = alt.Y('prediccion', axis=alt.Axis(title='Energía Eléctrica Media en el día')),
+    y = alt.Y('prediccion', axis=alt.Axis(title='Energía Eléctrica')),
     color = alt.Color('prediccion', legend=alt.Legend(title="MW/h"), scale=alt.Scale(scheme='lightmulti')),
     tooltip = 'prediccion'
 ).properties(
-    title = 'Demanda de energía media por día',
+    title = 'Demanda de energía media por hora cada día',
     width = 800,
     height = 500)
 
@@ -153,7 +153,7 @@ agrup2['Dia'] = agrup2.index
 
 grafico3 = alt.Chart(agrup2).mark_bar(size = 20).encode(
     x = alt.X('Dia', axis=alt.Axis(title='Fecha')),
-    y = alt.Y('prediccion', axis=alt.Axis(title='Energía Eléctrica Total en el día')),
+    y = alt.Y('prediccion', axis=alt.Axis(title='Energía Eléctrica')),
     color = alt.Color('prediccion', legend=alt.Legend(title="MW"), scale=alt.Scale(scheme='lightmulti')),
     tooltip = 'prediccion'
 ).properties(
