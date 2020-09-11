@@ -47,3 +47,4 @@ Por otro lado, en el repositorio ya están guardados todos los archivos que se g
 La App funciona de la siguiente forma:
 - En primer lugar hay que seleccionar mediante la slider el horizonte temporal sobre el que queremos hacer la predicicón. Puede ser desde un día (valor por defecto) a una semana completa. La primera fecha sobre la que se puede hacer predicción es el día siguiente al que nos encontremos cuando estemos utilizando la App.
 - En segundo lugar, al seleccionar el rango de fechas sobre el que queremos hacer la predicción, nos aparecen en la sidebar tantas cajas de texto como días queramos predecir. En éstas cajas se debe introducir la temperatura media que se espera para dichos días.
+- Una vez hecho ésto, la App nos dará el resultado de las predicciones y nos mostrara de formá grafica las mismas.
