@@ -18,6 +18,7 @@ st.markdown("""A continuación se debe seleccionar cual es el horizonte temporal
 (entre 1 y 7 días). Una vez seleccionado, se debe introducir en la barra lateral la prevision de temperatura 
 media para cada día:""")
 
+
 def rmse(y_test, pred):
     return np.sqrt(mean_squared_error(y_test, pred))
 
@@ -60,6 +61,9 @@ else:
 #hacer la predicción. EL numero de cajas que aparecen en el sidebar depende del horizonte temporal elegido, es decir, si solo
 #hago la predicción sobre un día, solo aparecerá una caja, pero si voy a predecir sobre la semana completa, aparecerán 7 cajas
 #para que sean rellenadas (el valor por defecto de la temperatura en todas es 0):
+
+st.sidebar.title('Temperaturas:')
+
 if len(fechas)/24 == 1:
     sel_temp1 = st.sidebar.text_input('Indica temperatura día 1', value = 0)
     temp = np.repeat([sel_temp1], 24)
